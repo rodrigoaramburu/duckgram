@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: .9rem;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.duckgram-login-wrapper{
+    margin:30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 60%;
+}
+
+.duckgram-photo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.duckgram-photo img{
+    width: 70%;
+}
+
+.duckgram-login-content{
+    flex:1;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    gap:10px;
+
+}
+
+
+.area{
+    border: 1px solid #CCC;
+    padding: 1.3rem;
+    background: #FFF;
+}
+
+.duckgram-logo{
+    width:200px;
+    display: block;
+    margin: 10px auto;
+}
+
+.area form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding:.5rem
+}
+
+.area input{
+    border:1px solid #CCC;
+    background: #FAFAFA;
+    padding: .8rem;
+    border-radius: 3px;
+}
+
+.area input:focus{
+    border:1px solid #AAA;
+}
+
+.area input[type='submit']{
+    background: #0095F6;
+    color: #FFF;
+    border-radius:4px;
+    font-size:1rem;
+    padding: .4rem;
+}
+
+.divider{
+    display: flex;
+    justify-content: stretch;
+    gap: 10px;
+    align-items: center;
+    color: #AAA;
+    margin: 10px 0;
+}
+
+.divider hr{
+    border-bottom: 1px solid #AAA;
+    flex: 1;
+}
+
+.login-with-facebook{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #385185;
+    font-weight: bold;
+}
+
+.forgot-password{
+    display: flex;
+    justify-content: center;
+    color: #385185;
+    font-size:.8rem;
+}
+
+.area:nth-child(2){
+    text-align: center;
+}
+.area:nth-child(2) a{
+    color: #0095F6;
+    font-size:1rem;
+}
+
+.get-app{
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.store-buttons{
+    display: flex;
+    justify-content: center;
+    gap:10px
+}
+
+.store-buttons img{
+    width: 40%;
+    
+}
+
+.footer nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding:20px;
+}
+
+.footer a{
+    color: #AAA;
+}
+
+.footer .content{
+    text-align: center;
+    color: #AAA;
+    padding:20px;
+}
+
+@media (max-width:800px) {
+    .duckgram-login-wrapper{
+        width: 100%;
+        margin: 10px !important;
+    }
+
+    .duckgram-photo{
+        display: none;
+    }  
+}
+
+
+.header{
+    background: #FFF;
+    border-bottom:1px solid #CCC;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0px;
+}
+.header img{
+    width: 150px;
+}
+
+.search input{
+    border: 1px solid #CCC;
+    padding: 3px;
+    border-radius: 3px;
+    background: #FAFAFA;
+}
+
+.content{
+    width:900px;
+    margin: auto;
+}
+
+.main{
+    margin-top:90px;
+}
+
+.main .content{
+    display: flex;
+    gap: 10px;
+    margin: 3rem auto;
+}
+
+.header .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    gap:10px;
+    padding-right: 20px;
+}
+
+.nav img{
+    width: 32px;
+    border-radius: 50%;
+}
+
+.nav svg, .nav img{
+    width: 32px;
+    height: 32px;
+}
+
+
+.posts{
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    gap:10px;
+}
+
+.post{
+    border: 1px solid #CCC;
+    background-color: #FFF;
+    flex: 1;
+}
+
+.post header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap:10px;
+}
+
+
+.post header .perfil-image{
+    width: 42px;
+    border: 2px solid #F666;
+    border-radius:50%;
+    padding:3px;
+}
+.post header h2{
+    flex: 1
+}
+
+.post .image img{
+    width: 100%;
+}
+
+.post header svg{
+    width:32px;
+    height: 32px;;
+}
+
+.post .actions {
+    padding: 10px;
+    display: flex;
+}
+
+.post .actions .group{
+    flex: 1
+}
+.post .actions svg{
+    width: 32px;
+    height: 32px;
+}
+.post .likes{
+    padding: 10px;
+}
+
+.post .comments{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.post footer{
+    padding:10px;
+}
+.post footer small{
+    color: #999;
+    font-size: .7rem
+}
+
+.bar{
+    width: 300px;
+    position: fixed;
+    margin-left: 600px;
+}
+
+.my-perfil{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding: 10px;
+}
+.my-perfil h5{
+    flex: 1;
+}
+
+.my-perfil img{
+    width: 48px;
+    border-radius: 50%;
+    border: 2px solid #F99;
+    padding: 2px;
+}
+
+.my-perfil a{
+    color: #50B5F7;
+    font-weight: bold;
+}
+
+.sugestions{
+    padding: 10px;
+}
+.sugestions h4{
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.sugestion{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.sugestion img{
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid #F99;
+    padding: 1px;
+}
+.sugestion h5{
+    flex: 1;
+}
+
+.sugestion-perfil a{
+    color: #50B5F7;
+    font-weight: bold;
+}
+
+
+
+@media (max-width:800px) {
+    *{
+        font-size: 1.3rem;
+    }
+    .bar{
+        display: none;
+    }
+
+    .posts{
+        width: 100%
+    }
+}
